@@ -1,0 +1,132 @@
+footer {
+  width: 100%;
+  color: #fff;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+#footer-content {
+  background-color: var(--color-primary-1);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+}
+
+#footer-contacts .logo {
+  margin-bottom: 0.75rem;
+  width: 250px;
+}
+
+#footer-contacts {
+  align-items: center;
+  justify-content: center;
+}
+
+#footer-social-media {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+
+#footer-social-media .footer-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+#footer-social-media .footer-link:hover {
+  opacity: 0.5;
+}
+
+#footer-social-media .footer-link i {
+  font-size: 1.25rem;
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#youtube {
+  background-color: #FF0000;
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  list-style: none;
+}
+
+.footer-list .footer-link {
+  color: #e4e2e2;
+  transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+  color: var(--color-primary-2)
+}
+
+#footer-especializacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#footer-especializacoes p {
+  color: #fff
+}
+
+#footer-especializacoes p:hover {
+  color: var(--color-primary-2);
+  cursor: pointer;
+}
+
+#footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 300;
+  background-color: var(--color-primary-5);
+  padding: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+  #footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #footer-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+
+  #footer-copyright {
+    text-align: center;
+  }
+
+  #footer-contacts {
+    text-align: center;
+  }
+
+  #footer-social-media{
+    justify-content: center;
+    align-items: center;
+    margin-left: 0rem;
+  }
+}

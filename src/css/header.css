@@ -1,0 +1,125 @@
+header {
+    width: 100%;
+    padding: 8px 18%;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-primary-1);
+    z-index: 3;
+    justify-content: space-between;
+  }
+
+  #navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav-item.active a {
+    color: var(--color-primary-2);
+}
+
+  #nav_list {
+    display: flex;
+    list-style: none;
+    gap: 18px;
+  }
+
+
+  .logo {
+    width: 300px;
+    object-fit: cover;
+  }
+  
+  .logo span{
+    color: #c1095a;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover{
+    color: var(--color-primary-2);
+  }
+
+  #mobile_btn {
+    display: none;
+  }
+
+  #mobile_menu {
+    display: none;
+  }
+
+  #mobile_menu ul {
+    list-style: none;
+  }
+
+  #mobile_menu li {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 4px;
+    border-top: 1px solid #101010;
+  }
+  
+
+  #mobile_menu li a {
+    text-decoration: none;
+    font-family: "Jost", sans-serif;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #mobile_menu i:hover{
+    color: #c1095a;
+  }
+
+  @media screen and (max-width: 1170px) {
+    #nav_list {
+        display: none;
+    }
+
+    header {
+      padding: 8px 8%;
+    }
+
+    .logo {
+      width: 200px;
+    }
+
+    #mobile_btn {
+        display: block;
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #mobile_menu.active {
+        display: block;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+}

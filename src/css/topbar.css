@@ -1,0 +1,50 @@
+.topbar {
+    padding: 6px 18%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: var(--color-primary-5);
+}
+
+.icons {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons i{
+    margin-left: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: var(--color-primary-2);
+    text-decoration: none;
+    transition: all 1s;
+}
+.icons i:hover{
+    opacity: 0.5;
+}
+
+.contact {
+    margin-left: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-size: 12px;
+    color: var(--color-primary-2);
+    transition: all 1s;
+}
+
+.contact:hover {
+    opacity: 0.5;
+}
+
+.contact i {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .topbar {
+        display: none;
+    }
+
+}

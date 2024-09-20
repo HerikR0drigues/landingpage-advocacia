@@ -1,0 +1,94 @@
+#home{
+    display: flex;
+    min-height: calc(100vh - 119px);
+    position: relative;
+    background-image: url(../images/hero-7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cta {
+    font-family: "Jost", sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+  
+  .cta .title {
+    font-size: 2.4rem;
+    color: #ffffff;
+  }
+  
+  .cta .subtitle {
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  
+  .cta span {
+    color: var(--color-primary-2);
+  }
+  
+  .cta .description {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+  }
+  
+  #cta_buttons {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-default {
+    background-image: linear-gradient(92.88deg, #EAA636 9.16%, #eeb559 43.89%, #ebc07a 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 4rem;
+    width: 12rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-default:hover {
+    box-shadow: rgba(205, 172, 63, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+  }
+
+  .cta-logo {
+    width: 300px;
+    object-fit: cover;
+  }
+
+
+  @media screen and (max-width: 900px) {
+    #home{
+      min-height: calc(100vh - 61px);
+    }
+
+    #cta_buttons {
+      flex-wrap: wrap;
+    }
+
+}
